@@ -51,7 +51,7 @@ a {
 .animeLeft {
     opacity: 0;
     transform: translateX(-20px);
-    animation: animeLeft 0.3 forwards;
+    animation: animeLeft 0.3s    forwards;
 
 }
 
