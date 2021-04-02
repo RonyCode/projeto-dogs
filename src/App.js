@@ -7,6 +7,8 @@ import Login from "./Components/Pages/Login/Login";
 import { UserStorage } from "./Components/UserContext";
 import "./App.css";
 import LoginPasswordLost from "./Components/Pages/Login/LoginPasswordLost";
+import User from "./Components/Pages/User/User";
+import ProtectedRoute from "./Helper/ProtectedRoute/ProtectedRoute";
 
 function App() {
   return (
@@ -16,8 +18,9 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login/*" element={<Login />} />
-            <Route path="/login/perdeu" element={<LoginPasswordLost />} />
+            <Route path="login/*" element={<Login />} />
+            <ProtectedRoute path="conta/*" element={<User />} />
+            <Route path="login/perdeu" element={<LoginPasswordLost />} />
           </Routes>
           <Footer />
         </UserStorage>

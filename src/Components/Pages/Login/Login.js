@@ -5,6 +5,7 @@ import LoginCreate from "./LoginCreate";
 import LoginPasswordLost from "./LoginPasswordLost";
 import LoginPasswordReset from "./LoginPasswordReset";
 import styles from "./Login.module.css";
+import ErrorPg from "../../Layout/ErrorPg/ErrorPg";
 
 const Login = () => {
   return (
@@ -12,9 +13,10 @@ const Login = () => {
       <div className={styles.forms}>
         <Routes>
           <Route path="/" element={<LoginForm />} />
-          <Route path="/criar" element={<LoginCreate />} />
-          <Route path="/perdeu" element={<LoginPasswordLost />} />
-          <Route path="/resetar" element={<LoginPasswordReset />} />
+          <Route path="criar" element={<LoginCreate />} />
+          <Route path="perdeu" element={<LoginPasswordLost />} />
+          <Route path="resetar" element={<LoginPasswordReset />} />
+          <Route path="*" element={<ErrorPg />} />
         </Routes>
       </div>
     </section>

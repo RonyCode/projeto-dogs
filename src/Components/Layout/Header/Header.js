@@ -5,19 +5,14 @@ import { ReactComponent as Dog } from "../../../Assets/dogs.svg";
 import { UserContext } from "../../UserContext";
 
 const Header = () => {
-  const { data, userLogout } = React.useContext(UserContext);
+  const { data } = React.useContext(UserContext);
 
   return (
     <header className={styles.header}>
-      <nav className={`${styles.nav} container`}>
-        <NavLink className={styles.logo} to="/" aria-label="Dogs - Home" end>
+      <nav className={styles.nav}>
+        <NavLink className={styles.logo} to="/" aria-label="Dogs - Home">
           <Dog />
         </NavLink>
-        {data && (
-          <button className={styles.button} onClick={userLogout}>
-            <NavLink to="/login">Logout</NavLink>
-          </button>
-        )}
         {data ? (
           <NavLink className={styles.login} to="/conta">
             {data.nome}
