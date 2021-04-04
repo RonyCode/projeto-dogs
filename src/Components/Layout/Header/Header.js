@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
+      <nav className={styles.nav + " container"}>
         <NavLink className={styles.logo} to="/" aria-label="Dogs - Home">
           <Dog />
         </NavLink>
