@@ -39,7 +39,7 @@
     content: '';
     display: inline-block;
     margin-right: .25rem;
-    background: url("../../../Assets/visualizacao.svg") no-repeat center center / cover;
+    background: url("../../../Assets/visualizacao.svg") no-repeat ;
 }
 
 .photo:hover .visualizacao {
