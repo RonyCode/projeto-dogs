@@ -48,10 +48,14 @@ a {
     margin: 0 auto;
 }
 
+.mainContainer {
+    margin-top: 4rem;
+}
+
 .animeLeft {
     opacity: 0;
     transform: translateX(-20px);
-    animation: animeLeft 0.3s    forwards;
+    animation: animeLeft 0.3s forwards;
 
 }
 
