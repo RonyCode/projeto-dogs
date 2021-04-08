@@ -17,7 +17,6 @@ const FeedPhotos = ({ setModalphoto }) => {
         user: 0,
       });
       const { json } = await request(url, options);
-      console.log(json);
     }
     fetchPhotos();
   }, [request]);
