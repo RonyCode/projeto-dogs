@@ -8,8 +8,8 @@
     grid-template-rows: auto 1fr auto;
     overflow: hidden;
     opacity: 0;
-    transform: scale(.8);
-    animation: scaleUp .3s forwards;
+    transform: scale(0.8);
+    animation: scaleUp 0.3s forwards;
 }
 
 @keyframes scaleUp {
@@ -37,7 +37,7 @@
     .photo {
         height: auto;
         max-height: calc(100vh - 4rem);
-        overflow: auto;
+        overflow-y: auto;
         grid-template-columns: minmax(20rem, 40rem);
     }
 
