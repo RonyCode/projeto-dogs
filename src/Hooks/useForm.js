@@ -16,7 +16,7 @@ const types = {
   },
 };
 
-const UseForm = (type) => {
+const useForm = (type) => {
   const [value, setValue] = React.useState("");
   const [error, setError] = React.useState(null);
 
@@ -49,4 +49,4 @@ const UseForm = (type) => {
   };
 };
 
-export default UseForm;
+export default useForm;
