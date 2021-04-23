@@ -2,8 +2,9 @@ import React from "react";
 
 const ErrorPg = () => {
   return (
-    <div>
-      <h1>Página não encontrada</h1>
+    <div className="container mainContainer">
+      <h1 className="title">Erro: 404</h1>
+      <p>Página não encontrada</p>
     </div>
   );
 };
